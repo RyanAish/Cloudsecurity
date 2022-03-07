@@ -89,17 +89,12 @@ We have installed the following Beats on these machines:
 * Filebeat
 * Metricbeat
 
-| Name  | IP Address |
-| WEB-1 | 10.0.0.5 |
-| WEB-2 | 10.0.0.6 |
-| WEB-3 | 10.0.0.8 |
-| ELK-Stack | 10.1.0.4 |
-| Name     |  |  |
-|----------|---------------------|----------------------|
-| WEB-1    | 10.0.0.4             |
-| WEB-2    | 10.0.0.4            |
-| WEB-3    | 10.0.0.4            |
-| ELK-STACK| 10.0.0.4            |
+| Name     | IP Address|
+|----------|----------|
+| WEB-1    | 10.0.0.5 |
+| WEB-2    | 10.0.0.6 |
+| WEB-3    | 10.0.0.8 |
+| ELK-STACK| 10.1.0.4 |
 
 
 These Beats allow us to collect the following information from each machine:
