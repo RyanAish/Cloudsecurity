@@ -47,7 +47,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+- The JumpBox machine was accessed by my network with the following IP address, for security purposes this is a randomly generated IP: 
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 Only my home computer was allowed access to the ELK-Server. 
