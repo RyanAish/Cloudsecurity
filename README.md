@@ -111,8 +111,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Ansible directory.
 - Update the Host file to include 
-- ![Host file]
+- ![Host file](https://github.com/RyanAish/Cloudsecurity/blob/b650f29942f19adcfc4d92002d9f6da237508f4b/Images/Screen%20Shot%202022-03-07%20at%2010.25.33%20PM.png)
 - Run the playbook, and navigate to http://[your_elk_ip]:5601/app/Kibana to check that the installation worked as expected.
+- ![Kibana](https://github.com/RyanAish/Cloudsecurity/blob/b650f29942f19adcfc4d92002d9f6da237508f4b/Images/Screen%20Shot%202022-03-07%20at%2010.34.00%20PM.png)
 
 
 - _Which file is the playbook? Where do you copy it?_ I copied that playboks to the roles directories.
