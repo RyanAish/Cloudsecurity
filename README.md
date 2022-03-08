@@ -57,10 +57,10 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 67.195.242.247       |
-| WEB-1    | No                  | 10.0.0.4             |
-| WEB-2    | No                  | 10.0.0.4             |
-| WEB-3    | No                  | 10.0.0.4             |
-| ELK-STACK| No                  | 10.0.0.4             |
+| WEB-1    | No                  | 10.0.0.5             |
+| WEB-2    | No                  | 10.0.0.6             |
+| WEB-3    | No                  | 10.0.0.8             |
+| ELK-STACK| No                  | 10.1.0.4             |
 
 ### Elk Configuration
 
@@ -110,12 +110,13 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Ansible directory.
-- Update the Host file to include  
-- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+- Update the Host file to include 
+- ![Host file]
+- Run the playbook, and navigate to http://[your_elk_ip]:5601/app/Kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? Where do you copy it?_ I copied that playboks to the roles directories.
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ The Hosts file allows for grouping of machines so you can dictate where you want resources to be deployed.
 - _Which URL do you navigate to in order to check that the ELK server is running? ( http://[your.VM.IP]:5601/app/kibana )
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
