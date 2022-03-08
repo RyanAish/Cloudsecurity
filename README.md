@@ -28,8 +28,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will have avalibitiy for clients, in addition to restricting attacks to the network. Therefore, if a server goes down or needs to be patched, the other server would be able to handle the traffic. Jump box are gateway access to an infrastructure that reducing the potential of an attack, via SSH which uses port 22.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat is a logging agent, where it gathers log files, and log events. I forwards all the logs to Logstash for more advanced processing.
+- Metricbeat is an lightweight tool that can collect metric data from your deployed virtual machines, it collects data such as CPU or memory, or anything data related to services running on that particular server that has this application.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -47,7 +47,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- The JumpBox machine was accessed by my network with the following IP address, for security purposes this is a randomly generated IP: 
+- The JumpBox machine was accessed by my network with the following IP address, for security purposes this is a randomly generated IP: 65.255.255.255
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 Only my home computer was allowed access to the ELK-Server. 
@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 67.195.792.247       |
+| Jump Box | Yes                 | 67.195.242.247       |
 | WEB-1    | No                  | 10.0.0.4             |
 | WEB-2    | No                  | 10.0.0.4             |
 | WEB-3    | No                  | 10.0.0.4             |
