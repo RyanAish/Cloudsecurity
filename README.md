@@ -7,6 +7,9 @@ The files in this repository were used to configure the network depicted below.
 
 ![Cloud Security.drawio.png](https://github.com/RyanAish/Cloudsecuriy/blob/5292560eb0e2a9db4421c0232cbfd3083d0ebc79/Diagrams/Cloud%20Security.drawio.png)
 
+Network Security Rules for Jumpbox and ELK:
+![JumpBox](https://github.com/RyanAish/Cloudsecurity/blob/fe84d918c38ec53d623d6924f381d0d9580ff369/Images/Screen%20Shot%202022-03-07%20at%204.15.23%20PM.png)
+![ELK-Server](https://github.com/RyanAish/Cloudsecurity/blob/fe84d918c38ec53d623d6924f381d0d9580ff369/Images/Screen%20Shot%202022-03-07%20at%204.15.52%20PM.png)
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
   - [Filebeat-playbook.yml](https://github.com/RyanAish/Cloudsecurity/blob/7c06aa735a9e6023b397dd47477002a3997cfb6a/Anisble/filebeat-playbook.yml)
