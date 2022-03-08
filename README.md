@@ -125,3 +125,4 @@ Sudo docker start (container name)
 sudo docker attach (container name)
 cd /etc/ansible directory.
 sudo ansible-playbook (your playbook name.yml)
+![ELK-Playbook](https://github.com/RyanAish/Cloudsecurity/blob/d7ea439d84e24b71198580b44bd1bd961f4ee0bf/Anisble/install-elk.yml)
