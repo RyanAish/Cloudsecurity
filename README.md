@@ -1,4 +1,4 @@
-# Cloudsecuriy
+# Cloudsecurity
 Unit 13 Elk Stack Project
 
 ## Automated ELK Stack Deployment
